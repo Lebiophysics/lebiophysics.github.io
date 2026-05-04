@@ -8,17 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
-      } else {
+      if (localStorage.theme === 'light') {
         document.documentElement.classList.remove('dark')
+      } else {
+        document.documentElement.classList.add('dark')
+        localStorage.setItem('theme', 'dark')
       }
     </script>
-    <script type="module" crossorigin src="./assets/index-DF-y7jjO.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CKCJ1jdt.css">
+    <script type="module" crossorigin src="./assets/index-4ueGeWxt.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CAn3YirG.css">
   </head>
   <body class="antialiased text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-900 transition-colors duration-300">
     <div id="root"></div>
   </body>
 </html>
-
